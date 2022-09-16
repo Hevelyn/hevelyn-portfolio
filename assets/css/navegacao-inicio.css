@@ -1,4 +1,3 @@
-/* criando barra de navegação */
 ul {
   list-style: none;
   display: flex;
@@ -32,7 +31,6 @@ img {
 .logo-butterfly {
   max-width: 80%;
   display: block;
-  /* opacity: 0.8; */
 }
 
 .logo-butterfly:hover {
@@ -65,15 +63,12 @@ img {
   max-width: 1000px;
   margin: 0 auto;
 }
-/* barra de navegação terminada */
 
-/* criando início */
 #inicio {
   background-image: url(/assets/img/galaxy.gif);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  /* background: linear-gradient(63.13deg, #352728 51.04%, #8e5d52 51.05%); */
   height: 100vh;
   display: flex;
   align-items: center;
@@ -114,11 +109,6 @@ img {
   border-radius: 15px;
 }
 
-/* .linkedin a {
-  width: 100%;
-  padding: 25px 0;
-} */
-
 .link {
   font-size: 22px;
   width: 50%;
@@ -139,18 +129,18 @@ img {
 
 @keyframes desenhoAnimacao {
   from {
-    top: -45px;
-    left: -45px;
+    top: -50px;
+    left: -50px;
   }
   to {
-    top: 25px;
-    left: 35px;
+    top: 50px;
+    left: 50px;
   }
 }
 
 .desenho-2 {
   position: relative;
-  animation: desenhoAnimacao 2.1s infinite alternate-reverse linear;
+  animation: desenhoAnimacao 2.1s infinite alternate-reverse ease-in-out;
 }
 
 .close-menu {

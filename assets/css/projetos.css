@@ -1,5 +1,8 @@
 #projetos {
-    background-color: #352728;
+    background: url(/assets/img/ddinppj-cadec65d-36c6-4705-82fb-612a9f6a8e36.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .projetos {
@@ -16,16 +19,16 @@
 
 button {
     padding: 10px 100px;
-    border-radius: 25px;
+    border-radius: 15px;
     cursor: pointer;
     color: white;
-    background-color: #493737;
+    background-color: #13004a;
     border: none;
     transition: ease-in-out 0.3s;
 }
 
 button:hover {
-    background-color: #a16c60;
+    background-color: #290087;
 }
 
 .github-link {
@@ -67,8 +70,8 @@ button:hover {
 }
 
 .pro div {
-    background-color: #705656;
-    width: 1000px;
+    background-color: #877d86c7;
+    width: 19em;
     text-align: center;
     padding: 5% 0;
     transform: rotate(-50deg);
