@@ -1,116 +1,157 @@
-#projetos {
-    background: url(/assets/img/ddinppj-cadec65d-36c6-4705-82fb-612a9f6a8e36.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+#projects {
+  background: url(/assets/img/bg-ceu-azul.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.projetos {
-    padding-top: 93px;
+.projects {
+  padding-top: 93px;
 }
 
-.projetos h2, .projetos a {
-    text-align: center;
+.projects h2,
+.projects a {
+  text-align: center;
 }
 
-.projetos h2 {
-    padding-bottom: 70px;
+.projects h2 {
+  padding-bottom: 70px;
 }
 
-button {
-    padding: 10px 100px;
-    border-radius: 15px;
-    cursor: pointer;
-    color: white;
-    background-color: #13004a;
-    border: none;
-    transition: ease-in-out 0.3s;
+.projects a {
+  display: inline;
 }
 
-button:hover {
-    background-color: #290087;
+.projects-items {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
 }
 
-.github-link {
-    margin: 0 auto;
-    padding-top: 35px;
-    padding-bottom: 93px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    gap: 35px;
+.box-pro {
+  margin: 1em;
 }
 
-.projetos a {
-    display: inline;
+.author-name {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #9d4d96;
+  margin: 0.5em 0em 0em 1em;
 }
 
-.pro {
-    background-color: #C4C4C4;
-    height: 195px;
-    width: 310px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    overflow: hidden;
-    transition: ease-in-out 0.3s;
+.title-project {
+  font-family: "Circular-Loom";
+  /* font-family: "Fira Sans", sans-serif; */
+  font-weight: 700;
+  font-size: 17px;
+  color: #ffffff;
+  margin: 0.5em 0em 0em 1em;
+}
+
+.pro,
+.pro-proj {
+  background-color: #c4c4c4;
+  height: 195px;
+  width: 310px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: ease-in-out 0.3s;
 }
 
 .pro div p {
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 20px;
-    color: #C4C4C4;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 20px;
+  color: #c4c4c4;
 }
 
 .pro:hover {
-    letter-spacing: 5px;
+  letter-spacing: 5px;
 }
 
 .pro div {
-    background-color: #877d86c7;
-    width: 19em;
-    text-align: center;
-    padding: 5% 0;
-    transform: rotate(-50deg);
+  background-color: #877d86c7;
+  width: 19em;
+  text-align: center;
+  padding: 5% 0;
+  transform: rotate(-50deg);
+}
+
+.pro-proj div {
+  background-color: #877d86c7;
+  width: 19em;
+  text-align: center;
+  padding: 5% 0;
+  transform: rotate(-50deg);
+}
+
+.img-project {
+  object-fit: cover;
+  height: 13em;
+  border-radius: 15px;
+}
+
+.link-project:hover {
+  opacity: 0.6;
+  transition: ease-in-out 0.3s;
+}
+
+.github-link {
+  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 93px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+button {
+  padding: 10px 100px;
+  border-radius: 15px;
+  cursor: pointer;
+  color: white;
+  background-color: #13004a;
+  border: none;
+  transition: ease-in-out 0.3s;
+}
+
+button:hover {
+  background-color: #290087;
 }
 
 .escondido {
-    opacity: 0;
-    display: none;
-    transition: 1000ms;
+  opacity: 0;
+  display: none;
+  transition: 1000ms;
+  justify-content: start;
 }
 
-.projetos-itens {
+
+@media (max-width: 1200px) {
+  .projects {
+    text-align: center;
     display: flex;
-    flex-wrap: wrap;
-    gap: 29.5px;
-    width: 100%;
+    flex-direction: column;
+  }
+
+  #projects {
+    display: flex;
     justify-content: center;
+  }
+
+  .projects-itens {
+    flex-direction: column;
+  }
 }
-
-@media (max-width:1200px) {
-  .projetos{
-      text-align: center;
-      display: flex;
-      flex-direction: column;
+@media (max-width: 950px) {
+  .pro {
+    max-width: 300px;
   }
-
-  #projetos {
-      display: flex;
-      justify-content: center;
-  }
-
-  .projetos-itens {
-      flex-direction: column;
-  }
-
-}
-@media (max-width:950px) {
-    .pro {
-        max-width: 300px;
-    }
-
 }
