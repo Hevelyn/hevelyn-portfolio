@@ -84,8 +84,16 @@ h2 {
 }
 
 @media (max-width: 950px) {
+  h2 {
+    font-size: 22px;
+  }
+
   .adjuster-2 {
     max-width: 100%;
     padding: 70px 30px;
+  }
+
+  .about-me {
+    padding: 0em 1em;
   }
 }

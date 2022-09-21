@@ -178,3 +178,9 @@ button:hover {
     width: 100%;
   }
 }
+
+@media (max-width: 950px) {
+  .projects h2 {
+    font-size: 22px;
+  }
+}
