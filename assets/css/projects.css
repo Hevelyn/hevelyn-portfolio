@@ -33,17 +33,8 @@
   margin: 1em;
 }
 
-.author-name {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 700;
-  font-size: 15px;
-  color: #9d4d96;
-  margin: 0.5em 0em 0em 1em;
-}
-
 .title-project {
   font-family: "Circular-Loom";
-  /* font-family: "Fira Sans", sans-serif; */
   font-weight: 700;
   font-size: 17px;
   color: #ffffff;
@@ -126,7 +117,7 @@ button:hover {
   background-color: #290087;
 }
 
-.escondido {
+.skills-hidden {
   opacity: 0;
   display: none;
   transition: 1000ms;
@@ -140,18 +131,50 @@ button:hover {
     display: flex;
     flex-direction: column;
   }
+}
 
-  #projects {
-    display: flex;
+@media (min-width: 300px) and (max-width: 499px) {
+  .projects-items {
+    display: grid;
+    width: 100%;
     justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .projects-itens {
-    flex-direction: column;
+  .box-pro{
+    margin: 1em 2em;
+  }
+
+  .pro,
+  .pro-proj {
+    width: 100%;
   }
 }
-@media (max-width: 950px) {
-  .pro {
-    max-width: 300px;
+
+@media (min-width: 500px) and (max-width: 600px) {
+  .projects-items {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pro,
+  .pro-proj {
+    width: 100%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 950px) {
+  .projects-items {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .pro,
+  .pro-proj {
+    width: 100%;
   }
 }

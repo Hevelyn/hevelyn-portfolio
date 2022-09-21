@@ -1,19 +1,19 @@
-const meuNome = document.querySelector('.meu-nome');
+const meuNome = document.querySelector('.my-name');
 const fName = meuNome.innerHTML;
 const botaoVerMais = document.querySelector('button');
-const habilidades = document.querySelectorAll('.escondido');
+const habilidades = document.querySelectorAll('.skills-hidden');
 const node = document.querySelector('#fundo')
 meuNome.innerHTML='';
 
 function cliqueVer (e) {
     habilidades.forEach( (elemento) => {
-        if (elemento.classList.contains('escondido')) {
-            elemento.classList.remove('escondido');
-            elemento.classList.add('visivel');
+        if (elemento.classList.contains('skills-hidden')) {
+            elemento.classList.remove('skills-hidden');
+            elemento.classList.add('skills-visible');
             botaoVerMais.innerHTML = 'Ver menos';
         } else {
-            elemento.classList.add('escondido');
-            elemento.classList.remove('visivel');
+            elemento.classList.add('skills-hidden');
+            elemento.classList.remove('skills-visible');
             botaoVerMais.innerHTML = 'Ver mais';
         }
     } )

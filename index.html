@@ -5,13 +5,16 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <script src="https://unpkg.com/scrollreveal"></script>
+
   <title>Portfólio | Hevelyn Vieira</title>
+
   <link rel="icon" type="image/x-icon" href="/assets/icons/logo-saturno.png" />
-  <link rel="stylesheet" href="/assets/css/navegacao-inicio.css" />
-  <link rel="stylesheet" href="/assets/css/sobre-mim.css" />
-  <link rel="stylesheet" href="/assets/css/projetos.css" />
-  <link rel="stylesheet" href="/assets/css/habilidades.css" />
+  <link rel="stylesheet" href="/assets/css/start.css" />
+  <link rel="stylesheet" href="/assets/css/about-me.css" />
+  <link rel="stylesheet" href="/assets/css/projects.css" />
+  <link rel="stylesheet" href="/assets/css/skills.css" />
   <link rel="stylesheet" href="/assets/css/footer.css" />
 </head>
 
@@ -19,9 +22,9 @@
   <div>
     <input id="close-menu" class="close-menu" type="checkbox" aria-label="close-menu" role="button" />
     <label class="close-menu-label" for="close-menu" title="close menu"></label>
-    <div class="barra">
+    <div class="bar">
       <div class="menu-centro">
-        <div class="barra-conteiner centralizador">
+        <div class="container-bar centralizer">
           <div class="logo esquerda">
             <a href="index.html" class="logo-butterfly">
               <img src="/assets/icons/logo-saturno.png" alt="logo" />
@@ -29,21 +32,22 @@
           </div>
           <nav class="direita">
             <ul onclick="getElementById('close-menu').checked=false;">
-              <li><a href="#inicio">Início</a></li>
-              <li><a href="#sobre-mim">Sobre mim</a></li>
-              <li><a href="#projetos">Projetos</a></li>
-              <li><a href="#habilidades">Habilidades</a></li>
+              <li><a href="#start">Início</a></li>
+              <li><a href="#about-me">Sobre mim</a></li>
+              <li><a href="#projects">Projetos</a></li>
+              <li><a href="#section-habilities">Habilidades</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </div>
-    <section id="inicio">
-      <div class="altura-ajuste">
-        <div class="inicio centralizador">
-          <div class="ajustador organizador">
-            <div class="apresentacao">
-              <p class="descricao">Oi, eu sou <br /> <span style="display: inline" class="meu-nome">Hevelyn Vieira.</span> <br /> Desenvolvedora Front-end</p>
+
+    <section id="start">
+      <div class="height-box">
+        <div class="start centralizer">
+          <div class="adjuster organizador">
+            <div class="presentation">
+              <p class="description">Oi, eu sou <br /> <span style="display: inline" class="my-name">Hevelyn Vieira.</span> <br /> Desenvolvedora Front-end</p>
               <br />
               <div class="linkedin">
                 <a href="https://www.linkedin.com/in/hevelyn-vieira-1b27ab170/" target="_blank" class="link">Linkedin</a>
@@ -53,23 +57,32 @@
         </div>
       </div>
     </section>
-    <section id="sobre-mim">
-      <div class="centralizador">
-        <div class="ajustador-2">
-          <div class="desenho">
-            <img class="desenho-2" src="/assets/img/person-space-1.jpg" alt="avatar" />
+
+    <section id="about-me">
+      <div class="centralizer">
+        <div class="adjuster-2">
+          <div class="space-person">
+            <img class="space-person-2" src="/assets/img/person-space-1.jpg" alt="person-space-1" />
           </div>
-          <div class="sobre-mim">
+          <div class="about-me">
             <h2>Sobre mim</h2>
             <br />
-            <p>
-              Meu nome é Hevelyn Vieira, tenho 24 anos e sou da cidade de São Paulo. Sou desenvolvedora Front-End e estou no caminho para me tornar Full-Stack.  
-              <!-- apaixonada por tecnologia e inovação, atuante com o desenvolvimento de websites e webapps, manutenção de sistemas e aproveitamento das ferramentas e tecnologias mais atuais e utilizadas no mercado.  -->
-            </p>
+            <div>
+              <p>
+                Sou Hevelyn Vieira, imersa no mundo da tecnologia e apaixonada por inovação, trabalho com
+                desenvolvimento e programação (fullstack), no momento presente atuando na empresa
+                <a href="https://alphaa.io/home" target="_blank">Alphaa'io</a> – sediada em Los Angeles,
+                é uma plataforma que permite que artistas e colecionadores de arte autentiquem, certifiquem e transfiram
+                suas propriedades de Arte Digital e Física – mas estou sempre à disposição para realização de trabalhos
+                pontuais (freelancer), sempre à disposição para novas experiências nesse grande mercado digital.
+                Entre em <a href="#footer">contato</a> para conversarmos!
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
     <section id="projects">
       <div class="projects">
         <h2 class="project">Projetos</h2>
@@ -80,7 +93,6 @@
                 <img src="/assets/img/task-list.png" class="img-project" alt="project-1">
               </a>
             </div>
-            <!-- <p class="author-name">Hevelyn Vieira</p> -->
             <p class="title-project">Task list</p>
           </div>
           <div class="box-pro">
@@ -89,7 +101,6 @@
                 <img src="/assets/img/alphaaio.png" class="img-project" alt="project-1">
               </a>
             </div>
-            <!-- <p class="author-name">Hevelyn Vieira</p> -->
             <p class="title-project">Alpha'a.io</p>
           </div>
           <div class="box-pro">
@@ -98,101 +109,108 @@
                 <img src="/assets/img/group-chat-nft.png" class="img-project" alt="project-1">
               </a>
             </div>
-            <!-- <p class="author-name">Hevelyn Vieira</p> -->
             <p class="title-project">Group chat nft</p>
           </div>
-          <div class="box-pro escondido">
-              <div class="pro">
-                <a href="https://galeria-fotos-omega.vercel.app/" class="link-project" target="_blank">
-                  <img src="/assets/img/galeria-fotos.png" class="img-project" alt="project-1">
-                </a>
-              </div>
-              <!-- <p class="author-name">Hevelyn Vieira</p> -->
-              <p class="title-project">Galeria de Fotos</p>
+          <div class="box-pro skills-hidden">
+            <div class="pro">
+              <a href="https://galeria-fotos-omega.vercel.app/" class="link-project" target="_blank">
+                <img src="/assets/img/galeria-fotos.png" class="img-project" alt="project-1">
+              </a>
+            </div>
+            <p class="title-project">Galeria de Fotos</p>
           </div>
-          <div class="box-pro escondido">
-              <div class="pro">
-                <a href="https://hdc-agency-smoky.vercel.app/" class="link-project" target="_blank">
-                  <img src="/assets/img/hdc-agency.png" class="img-project" alt="project-1">
-                </a>
-              </div>
-              <!-- <p class="author-name">Hevelyn Vieira</p> -->
-              <p class="title-project">HDC Agency - Ecommerce</p>
+          <div class="box-pro skills-hidden">
+            <div class="pro">
+              <a href="https://hdc-agency-smoky.vercel.app/" class="link-project" target="_blank">
+                <img src="/assets/img/hdc-agency.png" class="img-project" alt="project-1">
+              </a>
+            </div>
+            <p class="title-project">HDC Agency - Ecommerce</p>
           </div>
-          <div class="box-pro escondido">
+          <div class="box-pro skills-hidden">
             <div class="pro ">
               <div class="breve">
                 <p>EM BREVE</p>
               </div>
             </div>
           </div>
-          </div>
-      </div>
-        <div class="github-link">
-          <button>Ver mais</button>
-          <a href="https://github.com/Hevelyn?tab=repositories" target="_blank">Repositórios no github</a>
         </div>
+      </div>
+      <div class="github-link">
+        <button>Ver mais</button>
+        <a href="https://github.com/Hevelyn?tab=repositories" target="_blank">Repositórios no github</a>
+      </div>
     </section>
-    <section id="habilidades">
-      <div class="centralizador">
-        <div class="habilidades-pd">
+
+    <section id="section-habilities">
+      <div class="">
+        <div class="section-habilities-pd">
           <h2 class="project">Habilidades</h2>
           <div class="skills-descricao">
             <div class="conteiner-skills">
-              <div class="skill-box skill4"> 
-                <img class="icones-habilidades" src="/assets/icons/html.png" alt="node-icon"> 
+              <div class="skill-box skill4">
+                <img class="icons-habilities" src="/assets/icons/html.png" alt="node-icon">
               </div>
-              <div class="skill-box skill5"> 
-                <img class="icones-habilidades" src="/assets/icons/css.png" alt="php-icon"> 
+              <div class="skill-box skill5">
+                <img class="icons-habilities" src="/assets/icons/css.png" alt="php-icon">
               </div>
-              <div class="skill-box skill6"> 
-                <img class="icones-habilidades" src="/assets/icons/javascript.png" alt="java-icon"> 
+              <div class="skill-box skill6">
+                <img class="icons-habilities" src="/assets/icons/javascript.png" alt="java-icon">
               </div>
-              <div class="skill-box skill6"> 
-                <img class="icones-habilidades" src="/assets/icons/ts.png" alt="java-icon"> 
+              <div class="skill-box skill6">
+                <img class="icons-habilities" src="/assets/icons/ts.png" alt="java-icon">
               </div>
-              <div class="skill-box skill6"> 
-                <img class="icones-habilidades" src="/assets/icons/angular.png" alt="java-icon"> 
+              <div class="skill-box skill6">
+                <img class="icons-habilities" src="/assets/icons/angular.png" alt="java-icon">
               </div>
-              <div class="skill-box skill6"> 
-                <img class="icones-habilidades" src="/assets/icons/node.png" alt="java-icon"> 
+              <div class="skill-box skill6">
+                <img class="icons-habilities" src="/assets/icons/node.png" alt="java-icon">
               </div>
-              <div class="skill-box skill6"> 
-                <img class="icones-habilidades" src="/assets/icons/postgreesql.png" alt="java-icon"> 
+              <div class="skill-box skill6">
+                <img class="icons-habilities" src="/assets/icons/postgreesql.png" alt="java-icon">
+              </div>
+              <div class="skill-box skill6">
+                <img class="icons-habilities" src="/assets/icons/bootstrap.png" alt="java-icon">
+              </div>
+              <div class="skill-box skill6">
+                <img class="icons-habilities" src="/assets/icons/sass.svg" alt="java-icon">
+              </div>
+              <div class="skill-box skill6">
+                <img class="icons-habilities" src="/assets/icons/adonis.png" alt="java-icon">
+              </div>
+              <div class="skill-box skill6">
+                <img class="icons-habilities" src="/assets/icons/git.png" alt="java-icon">
+              </div>
+              <div class="skill-box skill6">
+                <img class="icons-habilities" src="/assets/icons/figma.png" alt="java-icon">
+              </div>
+              <div class="skill-box skill6">
+                <img class="icons-habilities" src="/assets/icons/notion.png" alt="java-icon">
               </div>
             </div>
-            <div class="conteiner-descricao">
+            <div class="conteiner-description">
               <img src="/assets/img/person-space-2.png" class="img-space" alt="">
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- <footer class="footer">
+
+    <footer id="footer">
       <div class="footer-conteiner">
-        <div class="contato-creditos">
-          E-mail para contato: ymatheusvieira.contato@gmail.com <br />
-          Feito por Matheus Vieira <br />
-          Imagem do south park: sp-studio.de <br />
+        <div class="contact-credits">
+          <p class="contact-credits">E-mail para contato: hevelynsoares15@gmail.com</p>
         </div>
-        <div class="icons">
-          <div class="links links1">
-            <a href="https://github.com/Math-Vieira" target="_blank">
-              <img class="transparente" src="/assets/img/githubff.svg" alt="github-icon" />
-            </a>
-          </div>
-          <div class="links links2">
-            <a href="https://www.linkedin.com/in/matheus-vieira-610661173/" target="_blank">
-              <img class="transparente" src="/assets/img/linkedinff.svg" alt="github-icon" />
-            </a>
-          </div>
+        <div>
+          <p class="contact-credits">Feito por Hevelyn Vieira </p>
         </div>
       </div>
-    </footer> -->
+    </footer>
   </div>
+
   <script src="/scripts/scroll.js"></script>
-  <script src="./scripts/maquina_escrever.js"></script>
-  <script src="./scripts/habilidades.js"></script>
+  <script src="./scripts/typewriter.js"></script>
+  <script src="./scripts/skills.js"></script>
 </body>
 
 </html>
