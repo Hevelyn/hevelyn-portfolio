@@ -66,6 +66,7 @@ img {
 
 #start {
   background-image: url(/assets/img/bg-galaxia-borboleta.gif);
+  /* background-image: url(/assets/img/bg-galaxia-borboleta\ \(1\).gif); */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

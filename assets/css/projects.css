@@ -183,4 +183,17 @@ button:hover {
   .projects h2 {
     font-size: 22px;
   }
+
+  /* .arrow{
+    display: flex;
+  }
+
+  .arrow img{
+    margin-right: 48em;
+    margin-bottom: -20em;
+    z-index: 5;
+    width: 5em;
+    display: flex;
+    object-fit: none;
+  } */
 }

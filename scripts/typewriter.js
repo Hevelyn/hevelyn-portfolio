@@ -31,7 +31,7 @@ function typeWriter (nome) {
         setTimeout(function (){
             meuNome.innerHTML += letra;
         }, 150 * index)
-    })}, 700)
+    })}, 300)
     
 }
 
